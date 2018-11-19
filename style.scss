@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,900');
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+@mixin achtergrondAfbeelding($afbeelding, $hoogte: 100vh) {
+      background:
+      /* top, transparent red, faked with gradient */
+      linear-gradient(
+        rgba(0, 0, 0, 0.30),
+        rgba(0, 0, 0, 0.30)
+      ),
+      /* bottom, image */
+      url($afbeelding);
+      background-repeat: no-repeat;
+      background-position: left;
+      background-size: cover;
+      height: $hoogte;
+      filter: drop-shadow(0px 8px 10px gray);
+}
+
+$rood :       #f45942;
+$lichtrood:  #ffa89b;
+$grijs:       #383838;
+$lightgrijs:  #eaeaea;
+$wit:         #fff;
+$zwart:       #000000;
+
+header {
+  background-color: $rood;
+}
+
+footer {
+  height: 30vh;
+  padding: 10vh;
+  background-color: $rood;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: left;
+  padding: 50px;
+  padding-left: 120px;
+  color: $wit;
+  text-shadow: 0px 2px 4px $zwart;
+}
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  text-align: center;
+  //margin: 50px;
+  padding: 25px;
+  color: $wit;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 20px;
+  color: $zwart;
+}
+
+h4, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: $wit;
+  text-decoration: none;
+  text-align: center;
+}
+
+a:hover {
+  color: $lichtrood;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  width: 100vh;
+  color: $grijs;
+}
+
+code {
+  font-family: 'Cutive Mono', monospace;
+  color: $grijs;
+  padding: 2px;
+  background-color: $lightgrijs
+}
+
+.logo {
+  position: absolute;
+  height: 80px;
+  width: 150px;
+  margin: 25px;
+  margin-left: 70px;
+  background-image: url('pictures/logo.svg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  filter: drop-shadow(0px 2px 4px $zwart);
+}
+
+.logosmall {
+  background: url('pictures/logosmall.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 10vh;
+  margin: 10vh;
+  filter: drop-shadow(0px 4px 5px gray);
+}
+
+.top, .text, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+  max-width: 90vw;
+  height: 20vh;
+  padding: 5vw;
+}
+
+.medium {
+  height: 55vh;
+}
+
+.large {
+  height: 65vh;
+}
+
+.top    {  @include achtergrondAfbeelding('pictures/back01.jpg', 10vh);}
+.two    {  @include achtergrondAfbeelding('pictures/back02.jpg', 15vh);}
+.three  {  @include achtergrondAfbeelding('pictures/back03.jpg', 15vh);}
+.four   {  @include achtergrondAfbeelding('pictures/back04.jpg', 15vh);}
+.five   {  @include achtergrondAfbeelding('pictures/back05.jpg', 15vh);}
+.six    {  @include achtergrondAfbeelding('pictures/back06.jpg', 15vh);}
+.seven  {  @include achtergrondAfbeelding('pictures/back07.jpg', 15vh);}
+.eight  {  @include achtergrondAfbeelding('pictures/back08.jpg', 15vh);}
+.nine   {  @include achtergrondAfbeelding('pictures/back09.jpg', 15vh);}
+.ten    {  @include achtergrondAfbeelding('pictures/back10.jpg', 15vh);}
+
+@media screen and (max-width: 1000px) {
+    .top {
+        height: 40vh;
+    }
+
+    .medium {
+      height: 70vh;
+    }
+
+    .large {
+      height: 90vh;
+    }
+}

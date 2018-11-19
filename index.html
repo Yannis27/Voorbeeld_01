@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+	<head>
+		<title>EXCL. News</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="reset.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link rel="icon" href="pictures/logosmall.png">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header id="home">
+			<div class="logo"></div>
+			<h1>EXCLAMATION NEWS</h1>
+		</header>
+		<main>
+			<div class="top">
+				<h2>10 zaken waarom je echt moet overstappen op SASS</h2>
+			</div>
+
+			<div class="text">
+				<h3>1. VARIABELEN</h3>
+				<p>Sass biedt variabelen als een manier om informatie op te slaan die u opnieuw wilt gebruiken in uw stylesheet. Nu kunt u die kleurwaarde of lange lettertypestapel opslaan als iets dat u gemakkelijk kunt onthouden. De manier waarop u een variabele declareert is met een dollarteken, '$', gevolgd door de naam. Deze naam kan zijn zoals u wilt. Vervolgens typt u een dubbele punt gevolgd door de waarde en een puntkomma om het af te sluiten.</p>
+				<code>$mainFont: "Helvetica Neue", Arial, sans-serif;<br>
+							$mainColor: #CC6699;</code><br><br>
+				<code>.mySelector { font-family: $mainFont; color: $mainColor; }</code>
+			</div>
+
+			<div class="two"></div>
+
+			<div class="text">
+				<h3>2. @IMPORT</h3>
+				<p>Nu zeg je tegen jezelf: "CSS heeft @import, het is niet zo cool" en je hebt gelijk, maar de CSS- en Sass-versies verschillen op een significante manier. In normale CSS worden @import vanuit andere stijlbladen opgehaald, maar dit gebeurt door een ander HTTP-verzoek te doen, iets wat we meestal willen vermijden. Om deze reden heb je misschien nog nooit @import gebruikt. Sass, aan de andere kant, is een preprocessor (nadruk op de pre) die dat bestand zal ophalen voordat het de CSS compileert.</p>
+				<code>@import 'partials/myPartial';</code>
+			</div>
+
+			<div class="three"></div>
+
+			<div class="text medium">
+				<h3>3. KLEURFUNCTIES</h3>
+				<p>Ik weet dat niet iedereen een programmeur is en dat het concept van een functie een beetje over je hoofd hangt, maar maak je geen zorgen, veel voegen een hoop nuttige functies toe zonder al te ingewikkeld te zijn. Wat kleuren betreft, zijn er verschillende handige om ze te manipuleren, maar drie vallen op als geweldige, makkelijke voordelen voor mensen die net zijn begonnen.</p>
+				<code>//syntax lighten($color, $amount) darken($color, $amount) rgba($color, $alpha)</code><br><br>
+				<code>
+					//in parenthesis you can put any color value followed by the amount you want to modify it by.<br>
+					//lighten(#000, 10%)<br>
+					//darken(rgb(0,0,0), 25%)<br>
+					//rgba(blue, 0.6)<br>
+					//rgba($mainColor, 0.6)<br>
+					//use case<br>
+					$color: #333;//set color variable<br>
+					.myButton {<br>
+					 background-color: rgba($color, 0.8);<br>
+					 color: lighten($color, 65%);<br>
+					 border: 1px solid darken($color, 5%);<br>
+					}<br><br>
+					//this compiles to:<br>
+					.myButton {<br>
+					 background: rgba(51, 51, 51, 0.8);<br>
+					 color: #d9d9d9;<br>
+					 border: 1px solid #262626;<br>
+					}
+				</code>
+			</div>
+
+			<div class="four"></div>
+
+			<div class="text medium">
+				<h3>4. MIXINS</h3>
+				<p>Sommige dingen in CSS zijn een beetje vervelend om te schrijven. Mixins maken groepen CSS-verklaringen die we opnieuw kunnen gebruiken op onze site. CSS3-stijlen waarvoor voorvoegsels van leveranciers nodig zijn, zijn een perfect voorbeeld van het gebruik van een mixin. In plaats van dezelfde eigenschap steeds opnieuw te typen, schrijven we een mixin eenmaal en noemen we die mix wanneer we deze willen gebruiken. Om een ​​mixin te declareren, gebruiken we het @mixinsleutelwoord.</p>
+				<code>
+					//declare mixin(now being passed an argument)<br>
+					@mixin box-sizing($boxSize) {<br>
+					  -webkit-box-sizing: $boxSize; <br>
+					     -moz-box-sizing: $boxSize; <br>
+					          box-sizing: $boxSize;<br>
+					}<br><br>
+
+					//use mixin<br>
+					.mySelector {<br>
+					    @include box-sizing(border-box);<br>
+					}<br><br>
+
+
+					//compiled to:<br>
+					.mySelector {<br>
+					    -webkit-box-sizing: border-box; <br>
+					       -moz-box-sizing: border-box; <br>
+					            box-sizing: border-box;<br>
+					}
+				</code>
+			</div>
+
+			<div class="five"></div>
+
+			<div class="text large">
+				<h3>5. @EXTEND</h3>
+				<p>@extend is een van de handigste functies waarmee we een reeks CSS-eigenschappen van de ene selector naar de andere kunnen delen. Denk aan een paar knoppen, zoals een knop voor accepteren en weigeren. Omdat ze beide knoppen zijn, delen ze waarschijnlijk het grootste deel van dezelfde stijl, maar de knop voor weigeren heeft een rode achtergrond om deze te laten opvallen. Met Sass schrijven we de standaardstijlen voor alle knoppen en "breiden" deze stijlen vervolgens uit naar de knop weigeren, waar we de rode achtergrond zouden toevoegen.</p>
+				<code>
+					.button {<br>
+					 background: rgba($color, .8);<br>
+					 color: lighten($color, 65%);<br>
+					 border: 1px solid darken($color, 5%);<br>
+					 padding: 1em;<br>
+					 display: block;<br>
+					 max-width: 200px;<br>
+					}<br>
+					.button-decline {<br>
+					 @extend .button;<br>
+					 background: red;<br>
+					}<br>
+					//compiles to<br>
+					.button, .button-decline {<br>
+					 background: rgba(51, 51, 51, 0.8);<br>
+					 color: #d9d9d9;<br>
+					 border: 1px solid #262626;<br>
+					 padding: 1em;<br>
+					 display: block;<br>
+					 max-width: 200px;<br>
+					}<br>
+					.button-decline {<br>
+					 background: red;<br>
+					}
+				</code>
+			</div>
+
+			<div class="six"></div>
+
+			<div class="text">
+				<h3>6. SNEL EN FLEXIBEL</h3>
+				<p>Door middel van variabelen en andere trucjes kan men veel sneller code schrijven in Sass en kan men deze code veel makkelijker veranderen. Het zorgt er ook voor dat het designen veel flexibeler wordt wat ook een zeer groot pluspunt is. </p>
+			</div>
+
+			<div class="seven"></div>
+
+			<div class="text">
+				<h3>7. MINDER CODE </h3>
+				<p>Als er veel code wordt geschreven met herhalende dingen zoals bijvoorbeeld afbeeldingen kan de code sterk verkort worden. Als er weinig code wordt geschreven met veel unieke dingen maakt Sass de code alleen maar langer, een voorbeeld hiervan zijn "mixins". </p>
+			</div>
+
+			<div class="eight"></div>
+
+			<div class="text">
+				<h3>8. NESTING </h3>
+				<p>Nesting zorgt ervoor dat de code steeds overzichtelijk en geordend blijft. </p>
+			</div>
+
+			<div class="nine"></div>
+
+			<div class="text">
+				<h3>9. MAKKELIJKE SET UP EN GEBRUIK</h3>
+				<p>Hoewel het zoveel voordelen geeft tegenover de gewone CSS is het makkelijk te gebruiken. Dit komt omdat Sass eigenlijk bijna exact hetzelfde is als CSS. De setup is heel makkelijk aangezien het Sass bestand gewoon een kopie is van het huidige CSS bestand.  </p>
+			</div>
+
+			<div class="ten"></div>
+
+			<div class="text">
+				<h3>10. FRAMEWORKS  </h3>
+				<p>Er zijn ook frameworks voor Sass waardoor je niet steeds helemaal vanaf nul moet beginnen en het coderen nog makkelijker wordt.  </p>
+			</div>
+
+		</main>
+
+		<footer>
+			<h4>Wil je meer over Sass weten, <a href="http://sass-lang.com/">klik hier</a></h4>
+			<div class="logosmall"></div>
+		</footer>
+
+
+
+
+
+		<script src="javascript.js"></script>
+	</body>
+</html>

@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:200,400,900");
+@import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
+header {
+  background-color: #f45942; }
+
+footer {
+  height: 30vh;
+  padding: 10vh;
+  background-color: #f45942; }
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
+  text-align: left;
+  padding: 50px;
+  padding-left: 120px;
+  color: #fff;
+  text-shadow: 0px 2px 4px #000000; }
+
+h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+  font-size: 55px;
+  text-align: center;
+  padding: 25px;
+  color: #fff; }
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1.2em;
+  margin: 20px;
+  color: #000000; }
+
+h4, a {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: #fff;
+  text-decoration: none;
+  text-align: center; }
+
+a:hover {
+  color: #ffa89b; }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.3em;
+  margin-left: 35px;
+  margin-bottom: 15px;
+  width: 100vh;
+  color: #383838; }
+
+code {
+  font-family: 'Cutive Mono', monospace;
+  color: #383838;
+  padding: 2px;
+  background-color: #eaeaea; }
+
+.logo {
+  position: absolute;
+  height: 80px;
+  width: 150px;
+  margin: 25px;
+  margin-left: 70px;
+  background-image: url("pictures/logo.svg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  -webkit-filter: drop-shadow(0px 2px 4px #000000);
+  filter: drop-shadow(0px 2px 4px #000000); }
+
+.logosmall {
+  background: url("pictures/logosmall.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 10vh;
+  margin: 10vh;
+  -webkit-filter: drop-shadow(0px 4px 5px gray);
+  filter: drop-shadow(0px 4px 5px gray); }
+
+.top, .text, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten {
+  max-width: 90vw;
+  height: 20vh;
+  padding: 5vw; }
+
+.medium {
+  height: 55vh; }
+
+.large {
+  height: 65vh; }
+
+.top {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back01.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back01.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back01.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back01.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 10vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.two {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back02.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back02.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back02.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back02.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.three {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back03.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back03.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back03.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back03.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.four {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back04.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back04.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back04.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back04.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.five {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back05.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back05.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back05.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back05.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.six {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back06.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back06.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back06.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back06.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.seven {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back07.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back07.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back07.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back07.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.eight {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back08.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back08.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back08.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back08.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.nine {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back09.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back09.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back09.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back09.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+.ten {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.3))), url("pictures/back10.jpg");
+  background: -webkit-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back10.jpg");
+  background: -o-linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back10.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("pictures/back10.jpg");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: cover;
+  height: 15vh;
+  -webkit-filter: drop-shadow(0px 8px 10px gray);
+  filter: drop-shadow(0px 8px 10px gray); }
+
+@media screen and (max-width: 1000px) {
+  .top {
+    height: 40vh; }
+  .medium {
+    height: 70vh; }
+  .large {
+    height: 90vh; } }
